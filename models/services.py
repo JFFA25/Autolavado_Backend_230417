@@ -7,8 +7,10 @@ class Service(Base):
     '''Modelo para la tabla de servicios'''
     __tablename__ = "tbc_servicios"
     id = Column(Integer, primary_key=True, index=True)
+    nombre =Column(S)
     precio = Column(Float, nullable=False)
     status = Column(Boolean, default=True)
     descripcion = Column(String(255), nullable=True)
     nombreServicio = Column(String(100), unique=True, index=True, nullable=False)
+
     UserID = Column(Integer, ForeignKey("tbc_usuarios.id"))  # Llave foránea a la tabla de usuarios     
