@@ -1,5 +1,5 @@
 ''''Esta clase permite generar el modelo para los tipos de roles'''
-from sqlalchemy import Column, Integer, String, Boolean,Colum,DateTime
+from sqlalchemy import Column, Integer, String, Boolean,Column,DateTime
 from config.db import Base
 
 class Rol(Base):
