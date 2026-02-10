@@ -7,7 +7,7 @@ class User(Base):
     '''Modelo para la tabla de usuarios'''
     __tablename__ = "tbc_usuarios"
     id = Column(Integer, primary_key=True, index=True)
-    Rol_id = Column(Integer, ForeignKey("tbc_roles.id"))  # Llave foránea a la tabla de roles
+    rol_id = Column(Integer, ForeignKey("tbc_roles.id"))  # Llave foránea a la tabla de roles
     nombre = Column(String(50))
     primer_apellido = Column(String(50))
     segundo_apellido = Column(String(50))
