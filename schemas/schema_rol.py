@@ -4,6 +4,7 @@ Docstring for schemas.schema_rol
 
 from pydantic import BaseModel
 from datetime import datetime
+
 class RolBase(BaseModel):
     '''Esquema base para los roles'''
     nombre_rol: str
